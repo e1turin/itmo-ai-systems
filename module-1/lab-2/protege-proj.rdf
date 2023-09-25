@@ -1,0 +1,458 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net/"
+     xml:base="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:players-social-net="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#"
+     xmlns:untitled-ontology-2="http://www.semanticweb.org/ivtur/ontologies/2023/8/untitled-ontology-2#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#достиг_уровня -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#достиг_уровня">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#друзья_с -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#друзья_с">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#меньше -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#меньше">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Booster -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Booster">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Player"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Player -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Player"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level"/>
+        <players-social-net:меньше rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level_10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level_10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level_11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level_11">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level"/>
+        <players-social-net:меньше rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level_12"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level_12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level_12">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level"/>
+        <players-social-net:меньше rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level_13"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level_13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level_13">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level"/>
+        <players-social-net:меньше rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level_14"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level_14 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level_14">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level"/>
+        <players-social-net:меньше rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level_15"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level_15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level_15">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level"/>
+        <players-social-net:меньше rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level_3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level"/>
+        <players-social-net:меньше rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level_4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level_4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level"/>
+        <players-social-net:меньше rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level_5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level_5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level_5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level"/>
+        <players-social-net:меньше rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level_6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level_6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level_6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level"/>
+        <players-social-net:меньше rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level_7"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level_7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level_7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level"/>
+        <players-social-net:меньше rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level_8"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level_8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level_8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level"/>
+        <players-social-net:меньше rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level_9"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level_9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level_9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level"/>
+        <players-social-net:меньше rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level_10"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Player_Any623 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Player_Any623">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Player"/>
+        <players-social-net:достиг_уровня rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level_14"/>
+        <players-social-net:друзья_с rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Player_Le_Potat"/>
+        <players-social-net:друзья_с rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Player_Pandushka"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Player_Bedrosik -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Player_Bedrosik">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Player"/>
+        <players-social-net:достиг_уровня rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level_4"/>
+        <players-social-net:друзья_с rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Player_Jorik"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Player_Denstep -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Player_Denstep">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Player"/>
+        <players-social-net:достиг_уровня rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level_4"/>
+        <players-social-net:друзья_с rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Player_Any623"/>
+        <players-social-net:друзья_с rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Player_Landau"/>
+        <players-social-net:друзья_с rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Player_Le_Potat"/>
+        <players-social-net:друзья_с rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Player_Patient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Player_Jorik -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Player_Jorik">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Player"/>
+        <players-social-net:достиг_уровня rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level_4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Player_Landau -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Player_Landau">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Player"/>
+        <players-social-net:достиг_уровня rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level_6"/>
+        <players-social-net:друзья_с rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Player_Lesha"/>
+        <players-social-net:друзья_с rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Player_Patient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Player_Le_Potat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Player_Le_Potat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Player"/>
+        <players-social-net:достиг_уровня rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level_8"/>
+        <players-social-net:друзья_с rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Player_Pandushka"/>
+        <players-social-net:друзья_с rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Player_Patient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Player_Lesha -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Player_Lesha">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Player"/>
+        <players-social-net:достиг_уровня rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level_8"/>
+        <players-social-net:друзья_с rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Player_Bedrosik"/>
+        <players-social-net:друзья_с rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Player_Patient"/>
+        <players-social-net:друзья_с rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Player_Shaylushai"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Player_Pandushka -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Player_Pandushka">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Player"/>
+        <players-social-net:достиг_уровня rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level_12"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Player_Patient -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Player_Patient">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Player"/>
+        <players-social-net:достиг_уровня rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level_11"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Player_Shaylushai -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Player_Shaylushai">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Player"/>
+        <players-social-net:достиг_уровня rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Level_9"/>
+        <players-social-net:друзья_с rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Player_Any623"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net/p1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net/p2">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net/l1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net/l2">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>booster</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Player"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net/p1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Player"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net/p2"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#достиг_уровня"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net/p1"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net/l1"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#достиг_уровня"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net/p2"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net/l2"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#меньше"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net/l1"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net/l2"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net#Booster"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ivtur/ontologies/2023/8/players-social-net/p2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+

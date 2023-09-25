@@ -2,7 +2,7 @@
 
 1. Module 1
     1. Prolog
-    2. Protoge
+    2. Protege
     3. ...
 2. Moduel 2
     1. AI...
