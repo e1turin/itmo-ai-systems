@@ -64,7 +64,8 @@ request_formats = [
 ]
 
 
-def present_formats():
+def print_help_msg():
+    print('Используйте команду `help` или `?` для получения этой справки.')
     print('== Справка по использованию запросов ==')
     for f in request_formats:
         print(f['help'])
@@ -79,7 +80,7 @@ def request_for_input() -> Generator[str, None, None]:
             if i == "exit":
                 return
             if i == "help" or i == "?":
-                present_formats()
+                print_help_msg()
                 continue
             yield i
         except (EOFError, KeyboardInterrupt) as e:
@@ -122,10 +123,11 @@ def execute_query(query: Query, kb: Prolog) -> Result | None:
 def present_result(res: Result):
     print(res.to_string())
 
-
 def main(argv: list[str]):
     kb = Prolog()
     kb.consult(argv[1] if len(argv) > 1 else "../lab-1/knowledge-base.pl")
+
+    print_help_msg()
 
     for i in request_for_input():
         q = parse_request_params(i)
