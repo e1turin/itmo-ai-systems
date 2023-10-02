@@ -14,24 +14,31 @@ def debug(msg):
 request_formats = [
     {
         'regex': r'^Кто дружит с (.+)\?$',
+        'help': 'Запрос: «Кто дружит с [Игрок]?»',
         'query': "player('{0}'),is_friends('{0}',X)",
         'vars': ('X'),
         'answer': lambda players: f'C ним/ней дружит {", а еще ".join(players)}.'
     },
+
     {
         'regex': r'^(.+) дружит с (.+)\?$',
+        'help': 'Запрос: «[Игрок А] дружит с [Игрок Б]?»',
         'query': "player('{0}'), player('{1}'),is_friends('{0}','{1}')",
         'vars': None,
         'answer': lambda res: "Да, это так." if res else "Нет, это не так."
     },
+
     {
         'regex': r'^(.+) может играть с (.+)\?$',
+        'help': 'Запрос: «[Игрок А] может играть с [Игрок Б]?»',
         'query': "player('{0}'),player('{1}'),can_play_in_team('{0}','{1}')",
         'vars': None,
         'answer': lambda res: "Да, это так." if res else "Нет, это не так."
     },
+
     {
         'regex': r'^Какой уровень у (.+)\?$',
+        'help': 'Запрос: «Какой уровень у [Игрок]?»',
         'query': "player('{0}'),has_level('{0}',X)",
         'vars': ('X'),
         'answer': lambda level:
@@ -40,7 +47,8 @@ request_formats = [
     },
     {
         'regex': r'^У кого такой же уровень, как и у (.+)\?$',
-        'query': "player('{0}'),same_level('{0}',X), X \= '{0}'",
+        'help': 'Запрос: «У кого такой же уровень, как и у [Игрок]?»',
+        'query': r"player('{0}'),same_level('{0}',X), X \= '{0}'",
         'vars': ('X'),
         'answer': lambda players:
             'Нет игроков с таким же уровнем.' if len(players) == 0
@@ -48,11 +56,18 @@ request_formats = [
     },
     {
         'regex': r'^У (.+) и (.+) одинаковые уровни\?$',
+        'help': 'Запрос: «У [Игрок А] и [Игрок Б] одинаковые уровни?»',
         'query': "player('{0}'),player('{1}'),same_level('{0}','{1}')",
         'vars': None,
         'answer': lambda res: "Да, это так." if res else "Нет, это не так."
     },
 ]
+
+
+def present_formats():
+    print('== Справка по использованию запросов ==')
+    for f in request_formats:
+        print(f['help'])
 
 
 def request_for_input() -> Generator[str, None, None]:
@@ -63,6 +78,9 @@ def request_for_input() -> Generator[str, None, None]:
 
             if i == "exit":
                 return
+            if i == "help" or i == "?":
+                present_formats()
+                continue
             yield i
         except (EOFError, KeyboardInterrupt) as e:
             print("request for exit")
