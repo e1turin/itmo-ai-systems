@@ -123,9 +123,14 @@ def execute_query(query: Query, kb: Prolog) -> Result | None:
 def present_result(res: Result):
     print(res.to_string())
 
+
 def main(argv: list[str]):
     kb = Prolog()
-    kb.consult(argv[1] if len(argv) > 1 else "../lab-1/knowledge-base.pl")
+    try:
+        kb.consult(argv[1] if len(argv) > 1 else "../lab-1/knowledge-base.pl")
+    except:
+        print("Incorrect path to KB! Try againg!")
+        return
 
     print_help_msg()
 
