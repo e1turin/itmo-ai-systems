@@ -4,14 +4,11 @@
 
 - Выбор датасетов:
     - Студенты с четным порядковым номером в группе должны использовать набор
-      данных о [жилье в
-      Калифорнии](https://developers.google.com/machine-learning/crash-course/california-housing-data-description?hl=ru)
-      Скачать
-      [тут](https://download.mlcc.google.com/mledu-datasets/california_housing_train.csv)
+      данных о [жилье в Калифорнии](https://developers.google.com/machine-learning/crash-course/california-housing-data-description?hl=ru)
+      Скачать [тут](https://download.mlcc.google.com/mledu-datasets/california_housing_train.csv)
 
     - Студенты с нечетным порядковым номером в группе должны использовать про
-      [обучение
-      студентов](https://www.kaggle.com/datasets/nikhil7280/student-performance-multiple-linear-regression)
+      [обучение студентов](https://www.kaggle.com/datasets/nikhil7280/student-performance-multiple-linear-regression)
 
 - Получите и визуализируйте статистику по датасету (включая количество, среднее
   значение, стандартное отклонение, минимум, максимум и различные квантили).
@@ -37,3 +34,8 @@
 
 - Бонусное задание
     - Ввести синтетический признак при построении модели
+
+- - -
+# Комментарии
+
+> я 10 в группе -> датасет про жилье в калифорнии.
