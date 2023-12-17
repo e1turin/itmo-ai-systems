@@ -24,3 +24,10 @@
 
 Я 9 в группе, поэтому беру датасет с оценками
 
+Реализации roc-auc можно подглядеть тут
+- https://ethen8181.github.io/machine-learning/model_selection/auc/auc.html
+
+Полезная информация
+- https://habr.com/ru/companies/ods/articles/328372/
+- https://scikit-learn.org/stable/auto_examples/model_selection/plot_roc.html
+- http://neerc.ifmo.ru/wiki/index.php?title=Оценка_качества_в_задачах_классификации
