@@ -1,10 +1,12 @@
-# ITMO course of AI Systems
+# Лабораторные работы по курсу "Системы искусственного интеллекта" в ИТМО
 
-1. Module 1
-    1. [Prolog Knowledge Base](/module-1/lab-1/README.md)
-    2. [Protege Ontology](/module-1/lab-2/README.md)
-    3. [Natural Language Query Resolver](/module-1/lab-3/README.md)
-2. Module 2
-    1. AI...
-
+1. Модуль 1
+    1. [База знаний в Prolog](./module-1/lab-1/README.md)
+    2. [Онтология в Protege](./module-1/lab-2/README.md)
+    3. [Обработчик запросов к базе знаний на естественном языке](./module-1/lab-3/README.md)
+2. Модуль 2
+    4. [Линейная регрессия](./module-2/lab-4/README.md)
+    5. [k-NN классификация](./module-2/lab-5/README.md)
+    6. [Решающее дерево](./module-2/lab-6/README.md)
+    7. [Логистическая регрессия](./module-2/lab-7/README.md)
 
